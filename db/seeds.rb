@@ -18,4 +18,11 @@ puts "Creating freebies..."
 # ***************************************************************
 # Create freebies Here
 
+dev = Dev.create(name: "John Doe")
+company = Company.create(name: "Example Company")
+
+Freebie.create(item_name: "Freebie 1", value: 10, dev: dev, company: company)
+Freebie.create(item_name: "Freebie 2", value: 20, dev: dev, company: company)
+# Add more instances as needed
+
 puts "Seeding done!"
